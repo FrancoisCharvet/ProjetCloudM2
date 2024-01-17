@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: projet-devops-m2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: projet-devops-m2
+  template:
+    metadata:
+      labels:
+        app: projet-devops-m2
+    spec:
+      containers:
+        - name: projet-devops-m2
+          image: francoischarvet/projet-devops-m2:1.0
+          imagePullPolicy: Always
