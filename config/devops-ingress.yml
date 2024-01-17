@@ -15,4 +15,4 @@ spec:
               service:
                 name: projet-devops-m2
                 port:
-                  number: 8081
+                  number: 8082
