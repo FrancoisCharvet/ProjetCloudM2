@@ -1,0 +1,22 @@
+alertmanager:
+  config:
+    global:
+      resolve_timeout: 5m
+    route:
+      group_wait: 20s
+      group_interval: 4m
+      repeat_interval: 4h
+      receiver: 'stan.dellon972@gmail.com'
+      routes: []
+    receivers:
+    - name: 'stan.dellon972@gmail.com'
+      email_configs:
+      - to: 'stan.dellon972@gmail.com'
+        from: 'stan.dellon972@gmail.com'
+        smarthost: 'smtp.gmail.com:587'
+        auth_username: 'stan.dellon972@gmail.com'
+        auth_password: 'sgdj mzza mjku yotc'
+        auth_identity: 'stan.dellon972@gmail.com'
+        send_resolved: true
+        text: |
+          Description: Alert from Grp1 - BERNARD CHARVET DELLON
